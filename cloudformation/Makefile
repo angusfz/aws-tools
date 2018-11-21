@@ -18,7 +18,6 @@ check-dependency = $(if $(shell command -v $(1)),,$(error Make sure $(1) is inst
 
 install: ## Install require tools and python lib ## -
 	pip install awscli cfn-lint 
-	pip install -r requirements.txt
 	sudo gem install cfn-nag
 
 clean: ## Clean temporary file ## -
